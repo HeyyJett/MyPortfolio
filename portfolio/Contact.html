@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+
+</head>
+<body class="bg-dark text-white" data-bs-theme="dark">
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar border-bottom border-body sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="About.html">My Portfolio</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link"  href="About.html">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Experience.html">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container justify-content-center">
+  <!--  CONTACT  -->
+  <div class="row mx-auto pt-5" id="contact">
+    <div class="col px-5">
+      <h1>Contact</h1>
+    </div>
+    <div class="col px-5">
+    </div>
+  </div>
+
+  <div class="row mx-auto">
+    <div class="col p-5">
+      <p><strong>
+        Feel free to get in touch with me! Whether you have a project in mind, a question to ask, or just want to say hello, I'm here for you. Please use the form below to reach out, and I'll get back to you as soon as possible.
+      </strong></p>
+      <p><strong>
+        Looking forward to connecting with you!
+      </strong></p>
+
+      <br>
+
+      <form novalidate>
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <label for="contactName"></label>
+          <input type="text" class="form-control" id="contactName" placeholder="Your name" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <label for="contactEmail"></label>
+          <input type="email" class="form-control" id="contactEmail" placeholder="name@email.com" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Subject</label>
+          <label for="contactSubject"></label>
+          <input type="text" class="form-control" id="contactSubject" placeholder="Subject"
+                 required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Message</label>
+          <label for="contactMessage"></label>
+          <textarea class="form-control" id="contactMessage" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" onclick="submit()" id="submitButton">Submit</button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
